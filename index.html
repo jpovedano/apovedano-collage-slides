@@ -1,49 +1,235 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/moon.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>ProgramArte</h3>
+					<h3>Dialogos con la obra de Antonio Povedano</h3>
+					<h4>Escuela de Arte Mateo Inurria</h4>
+					<small>Javier Povedano Molina</small>
+			</section>
+			<section>
+				<h2>Sobre mí</h2>
+			</section>
+
+			<section>
+				<h2>El reto</h2>
+				<blockquote>¿Sería posible conseguir que las piezas de los collages se pudieran ir sumando como si fuera un
+					puzzle sobre un fondo negro y que fuesen cayendo lentamente para componer el collage completo?
+				</blockquote>
+			</section>
+			<section data-background-image="images/olivo-orig.jpg" data-vertical-align-top>
+				<h2>Convertir esto...</h2>
+			</section>
+			<section data-background-video="media/olivo-v4.mp4" data-vertical-align-bottom>
+				<h2>...en esto</h2>
+			</section>
+
+			<section>
+				<h2>Los requisitos</h2>
+				<ul>
+					<li>Tiempo de realización</li>
+					<li>Costo</li>
+					<li>Repetible</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Solución:</h2>
+				<h3>Que una máquina lo haga por mi</h3>
+			</section>
+
+			<section>
+				<h2>Inteligencia artificial?</h2>
+				<img src="images/ai-doggies.jpg" />
+			</section>
+
+			<section>
+				<h2>Programación</h2>
+				<section>
+					<blockquote>El proceso de crear y construir un programa
+						que será ejecutado por una computadora para realizar
+						una determinada tarea.
+					</blockquote>
+				</section>
+				<section>
+					<h5>Mi caballete...</h5>
+					<img src="images/editor.png"/ height="400">
+				</section>
+				<section>
+					<h5>Mis pinceles</h5>
+
+				</section>
+			</section>
+
+			<section>
+
+				<section>
+					<h2>La inspiración</h2>
+					<h4>Procesamiento de imágenes</h4>
+					<iframe class="stretch" src="https://blogs.mathworks.com/steve/2006/06/02/cell-segmentation/"></iframe>
+				</section>
+
+				<section data-background-video="media/demoscene.mp4">
+					<h2>La inspiración</h2>
+					<h4>Demoscene</h4>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h2>Preparando el lienzo</h2>
+				</section>>
+				<section>
+					<h3>Ajuste</h3>
+					<small>Rotado, correccion y recortado</small><br>
+					<img height="200px" src="images/castillo-orig.jpg" />
+					<img height="200px" src="images/castillo-adjusted.png" />
+				</section>
+				<section>
+					<h2>Preprocesado</h2>
+					<small>Ecualizado y limpieza</small><br>
+					<img height="200px" src="images/castillo-adjusted.png" />
+					<img height="200px" src="images/castillo-preprocessed.png" />
+				</section>
+				<section>
+					<h2>Preprocesado</h2>
+					<small>Umbralizado</small><br>
+					<img height="200px" src="images/castillo-preprocessed.png" />
+					<img height="200px" src="images/castillo-threshold.png" />
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h2>Procesado</h2>
+					<h3>El trabajo "sucio"</h3>
+				</section>>
+				<section>
+					<h3>Segmentación</h3>
+					<small>Detectamos todos los elementos</small><br>
+					<img height="200px" src="images/castillo-threshold.png" />
+					<img height="200px" src="images/castillo-labeled.png" />
+				</section>
+				<section>
+					<h3>Generacion de frames</h3>
+					<small>Seleccionamos elementos uno a uno</small><br>
+					<img height="200px" src="images/castillo-threshold.png" />
+					<img height="200px" src="images/castillo-labeled.png" />
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h2>Olivo y Luna:Original</h2>
+					<img src="images/olivo-orig.jpg"/ height="400">
+				</section>
+				<section>
+					<h2>Olivo y Luna:Preprocesado</h2>
+					<img src="images/olivo.png"/ height="400">
+				</section>
+				<section>
+					<h3>Primer intento</h3>
+					<h4>La prueba de Concepto</h4>
+					<video height="400" controls>
+						<source src="media/olivo-v1.mp4" />
+					</video>
+				</section>
+				<section>
+					<h3>Segundo intento</h3>
+					<h4>Un poco de color</h4>
+					<video height="400" controls>
+						<source src="media/olivo-v2.mp4" />
+					</video>
+				</section>
+				<section>
+					<h3>Tercer intento</h3>
+					<h4>Un poco de orden</h4>
+					<video height="400" controls>
+						<source src="media/olivo-v3.mp4" />
+					</video>
+				</section>
+				<section>
+					<h3>El toque humano</h3>
+					<img src="images/olivo-mask.png">
+				</section>
+				<section>
+					<h3>Final</h3>
+					<video height="400" controls>
+						<source src="media/olivo-v4.mp4" />
+					</video>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Castillo:Original</h2>
+					<img height="400" src="images/castillo-orig.jpg">
+				</section>
+				<section>
+					<h2>Castillo:Preprocesado</h2>
+					<img height="400" src="images/castillo-preprocessed.png">
+				</section>
+				<section>
+					<h2>Castillo:El toque humano</h2>
+					<img height="400" src="images/castillo-mask.png">
+				</section>
+				<section>
+					<h3>Resultado Final</h3>
+					<video height="400" controls>
+						<source src="media/castillo.mp4" />
+					</video>
+				</section>
+			</section>
+
+			<section>
+				<h2>Referencias</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
